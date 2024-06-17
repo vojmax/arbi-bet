@@ -1,9 +1,17 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>clean</h1>
+    <main className="flex h-full flex-col items-center justify-center bg-slate-100">
+      <div className="space-y-6 bg-white p-8 rounded-xl">
+        <h1 className="text-6xl font-semibold drop-shadow-md flex">🔒Auth</h1>
+        <p className="text-xl ">please register or login</p>
+        <div>
+          <Button variant="secondary" size="lg">
+            Sign in
+          </Button>
+        </div>
+      </div>
     </main>
   );
 }
